@@ -4,18 +4,22 @@
  */
 package Dao;
 
+import java.sql.SQLException;
+
 /**
  *
  * @author Samsung
  */
 public class TesteConnectionDb {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         try {
-            Class.forName("org.postgresql.Driver");
-            System.out.println("Driver carregado com sucesso!");
-        } catch (Exception ex) {
-            System.out.println("Driver nao pode ser carregado!");
+            ConnectionDb con = new ConnectionDb();
+            System.out.println("Conexão realizada com sucesso.");
+        }catch (SQLException e){
+            System.out.println("Erro ao se conectar com o banco de dados " + "Erro " + e.getMessage());
+
         }
+
     }
 }

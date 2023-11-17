@@ -7,24 +7,35 @@ import java.sql.SQLException;
 
 public class ConnectionDb {
 
-    public static void main(String[] args) {
-        String driver = "org.postgresql.Driver";
-        String user = "postgres";
-        String senha = "102030";
-        String url = "jdbc:postgresql://localhost:5432/postgres";
+        Connection con;
+        String user;
+        String senha;
+        String url;
+
+    public ConnectionDb() throws SQLException {
+
+        user = "postgres";
+        senha = "102030";
+        url = "jdbc:postgresql://localhost:5432/bd_gerenciador";
 
         try {
-            Class.forName(driver);
-            Connection con = null;
 
-            con = (Connection) DriverManager.getConnection(url, user, senha);
-
+            Class.forName("org.postgresql.Driver");
+            con = DriverManager.getConnection(url, user, senha);
             System.out.println("Conexão realizada com sucesso.");
 
-        } catch (ClassNotFoundException ex) {
-            System.err.print(ex.getMessage());
-        } catch (SQLException e) {
-            System.err.print(e.getMessage());
+        } catch (Exception e) {
+           e.printStackTrace();
+            System.out.println(e.getMessage() + "\n Erro ao conectar ao banco de dados!");
         }
+
+
+
+
+
     }
-}
+
+
+
+    }
+

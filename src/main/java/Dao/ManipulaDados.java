@@ -1,7 +1,11 @@
 package Dao;
 
 public class ManipulaDados {
-    ConnectionDb conexao = new ConnectionDb();
 
+    public void cadastrarUsuario(){}
+
+    public void alterarUsuario(){}
+
+    public void deletarUsusrio(){}
 
 }
