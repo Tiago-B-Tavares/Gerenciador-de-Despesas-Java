@@ -4,13 +4,14 @@ package Dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class ConnectionDb {
 
-        Connection con;
-        String user;
-        String senha;
-        String url;
+    Connection con;
+    String user;
+    String senha;
+    String url;
 
     public ConnectionDb() throws SQLException {
 
@@ -25,17 +26,25 @@ public class ConnectionDb {
             System.out.println("Conexão realizada com sucesso.");
 
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
             System.out.println(e.getMessage() + "\n Erro ao conectar ao banco de dados!");
         }
 
 
+    }
+    public int executaSQL(String sql){
+        try {
 
-
-
+            Statement smt = con.createStatement();
+            int res = smt.executeUpdate(sql);
+            con.close();
+            return res;
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
+        }
     }
 
 
-
-    }
+}
 

@@ -16,6 +16,7 @@ public class Usuario {
     private String senha;
 
     public Usuario() {
+
     }
 
     public int getIdUsuario() {
@@ -49,5 +50,4 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-
 }
