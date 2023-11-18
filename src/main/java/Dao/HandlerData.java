@@ -7,10 +7,11 @@ public class HandlerData {
     ConnectionDb con;
 
 
-     public String tabela;
-     public String camposTabela;
-     public String valores;
-     String valorId;
+    private String tabela;
+    private String camposTabela;
+    private String valores;
+    private String valorId;
+    private boolean status;
 
 
     {
@@ -37,15 +38,20 @@ public class HandlerData {
         this.valorId = valorId;
     }
 
+    public boolean getStatus() {
+        return status;
+    }
 
+    public void cadastrar() {
 
+        String sql = " INSERT INTO " + this.tabela + "(" + this.camposTabela + ") VALUES ( " + this.valores + ")";
 
-    public void cadastrar(String tabela, String camposTabela, String valores){
-        String sql = " INSERT INTO" + this.tabela + "(" + this.camposTabela + ") VALUES (" + this.valores + ")";
         int res = con.executaSQL(sql);
         if (res > 0) {
-            System.out.println("cadastrado com sucesso!");
+            this.status = true;
+            System.out.println("cadastro realizadoS com sucesso!");
         } else {
+            this.status = false;
             System.out.println("Erro ao cadastrar!");
         }
     }

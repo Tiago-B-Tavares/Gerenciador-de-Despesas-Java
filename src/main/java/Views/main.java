@@ -5,6 +5,8 @@
 package Views;
 import Controller.CadastrarUsuario;
 import Model.Usuario;
+
+import javax.swing.*;
 import java.util.Arrays;
 
 /**
@@ -123,18 +125,17 @@ public class main extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Usuario user = new Usuario();
-        CadastrarUsuario cu = new CadastrarUsuario();
-        
-        String nome = txtNome.getText();
-        String email = txtEmail.getText();
-        char[] senha = txtSenha.getPassword();
-        
-        user.setNome(nome);
-        user.setEmail(email);
-        user.setSenha(Arrays.toString(senha));
-        
-        lblUser.setText(user.getNome());
-        System.out.println(user.getNome());
+
+
+        user.setNome(txtNome.getText());
+        user.setEmail(txtEmail.getText());
+        user.setSenha(Arrays.toString(txtSenha.getPassword()));
+
+        CadastrarUsuario cadastro = new CadastrarUsuario(user.getNome(), user.getEmail(), user.getSenha());
+
+        dispose();
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed

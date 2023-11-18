@@ -1,22 +1,36 @@
 package Controller;
 
+import Dao.ConnectionDb;
 import Dao.HandlerData;
 import Model.Usuario;
 
+import javax.swing.*;
+import java.sql.SQLException;
+
 public class CadastrarUsuario {
-    public static void main(String[] args) {
-        Usuario user = new Usuario();
-        HandlerData handlerData = new HandlerData();
 
-        String nome = user.getNome();
-        String email = user.getEmail();
-        String senha = user.getSenha();
 
-        String tabela = "tb_usuarios";
-        String camposTabela = "nome, email, senha";
-        String valores = "'"+nome +"', '"+email +"', '"+nome +"'";
-        handlerData.cadastrar(tabela, camposTabela, valores );
+    public CadastrarUsuario(String nome, String email, String senha) {
 
+        try {
+
+            Usuario user = new Usuario();
+            HandlerData manipulador = new HandlerData();
+
+            manipulador.setTabela("tb_usuarios");
+            manipulador.setCamposTabela("nome, email, senha");
+            manipulador.setValores("'" + nome + "', '" + email + "', '" + nome + "'");
+            manipulador.cadastrar();
+
+            if (manipulador.getStatus()) {
+                JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!!");
+            } else {
+                JOptionPane.showMessageDialog(null, "Erro ao cadastrar usuário!!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage() + "\n Erro ao cadastrar usuario no banco de dados!");
+        }
 
     }
 
