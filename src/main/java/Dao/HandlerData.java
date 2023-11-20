@@ -1,18 +1,17 @@
 package Dao;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class HandlerData {
 
     ConnectionDb con;
 
-
     private String tabela;
     private String camposTabela;
     private String valores;
     private String valorId;
     private boolean status;
-
 
     {
         try {
@@ -49,7 +48,7 @@ public class HandlerData {
         int res = con.executaSQL(sql);
         if (res > 0) {
             this.status = true;
-            System.out.println("cadastro realizadoS com sucesso!");
+            System.out.println("cadastro realizado com sucesso!");
         } else {
             this.status = false;
             System.out.println("Erro ao cadastrar!");
@@ -62,8 +61,23 @@ public class HandlerData {
     public void deletar() {
     }
 
-    public void buscar() {
-    }
+    public void executaBuscaTodosUsuarios() {
 
+        String sql = "SELECT * FROM " + this.tabela;
+        ResultSet rs = con.executaBuscaSQL(sql);
+
+        try {
+            while (rs.next()) {
+                int id = rs.getInt("idUsuario");
+                String nome = rs.getString("nome");
+                String email = rs.getString("email");
+                String senha = rs.getString("senha");
+                System.out.println(id + " - " + nome );
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
