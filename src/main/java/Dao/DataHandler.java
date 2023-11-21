@@ -68,6 +68,15 @@ public class DataHandler {
     }
 
     public void deletar() {
+        String sql = "DELETE FROM " + this.tabela + " WHERE " + this.camposTabela + " = " + this.valores;
+        int res = con.executaSQL(sql);
+        if (res > 0) {
+            this.status = true;
+            System.out.println("Deletado com sucesso!");
+        } else {
+            this.status = false;
+            System.out.println("Erro ao deletar!");
+        }
     }
 
     public void executaBuscaTodosUsuarios() {

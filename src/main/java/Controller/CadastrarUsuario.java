@@ -12,7 +12,7 @@ public class CadastrarUsuario {
 
         try {
 
-            Usuario user = new Usuario();
+
             DataHandler manipulador = new DataHandler();
 
             manipulador.setTabela("tb_usuarios");
