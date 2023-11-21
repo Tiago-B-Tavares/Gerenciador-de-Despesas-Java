@@ -10,7 +10,7 @@ package Model;
  */
 public class Usuario {
 
-    private int idUsuario;
+    private int id;
     private String nome;
     private String email;
     private String senha;
@@ -20,11 +20,11 @@ public class Usuario {
     }
 
     public int getIdUsuario() {
-        return idUsuario;
+        return id;
     }
 
     public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
+        this.id = idUsuario;
     }
 
     public String getNome() {

@@ -3,7 +3,7 @@ package Dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class HandlerData {
+public class DataHandler {
 
     ConnectionDb con;
 
@@ -56,6 +56,15 @@ public class HandlerData {
     }
 
     public void alterar() {
+        String sql = "UPDATE " + this.tabela + " SET "+this.camposTabela+ "WHERE = id = "+ this.valorId ;
+        int res = con.executaSQL(sql);
+        if (res > 0) {
+            this.status = true;
+            System.out.println("Alterado com sucesso!");
+        } else {
+            this.status = false;
+            System.out.println("Erro ao alterar!");
+        }
     }
 
     public void deletar() {

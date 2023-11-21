@@ -1,11 +1,9 @@
 package Controller;
 
-import Dao.ConnectionDb;
-import Dao.HandlerData;
+import Dao.DataHandler;
 import Model.Usuario;
 
 import javax.swing.*;
-import java.sql.SQLException;
 
 public class CadastrarUsuario {
 
@@ -15,7 +13,7 @@ public class CadastrarUsuario {
         try {
 
             Usuario user = new Usuario();
-            HandlerData manipulador = new HandlerData();
+            DataHandler manipulador = new DataHandler();
 
             manipulador.setTabela("tb_usuarios");
             manipulador.setCamposTabela("nome, email, senha");
