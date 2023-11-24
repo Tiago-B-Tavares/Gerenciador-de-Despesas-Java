@@ -11,13 +11,11 @@ public class CadastrarUsuario {
     public CadastrarUsuario(String nome, String email, String senha) {
 
         try {
-
-
             DataHandler manipulador = new DataHandler();
 
             manipulador.setTabela("tb_usuarios");
             manipulador.setCamposTabela("nome, email, senha");
-            manipulador.setValores("'" + nome + "', '" + email + "', '" + nome + "'");
+            manipulador.setValores("'" + nome + "', '" + email + "', '" + senha + "'");
             manipulador.cadastrar();
 
             if (manipulador.getStatus()) {

@@ -9,7 +9,7 @@ package Model;
  * @author Samsung
  */
 public class Despesa {
-        private int idDespesa;
+        private int id;
         private String nome;
         private Double valor;
         private String dataInsercao;
@@ -18,11 +18,11 @@ public class Despesa {
         public Despesa(){}
 
     public int getIdDespesa() {
-        return idDespesa;
+        return id;
     }
 
     public void setIdDespesa(int idDespesa) {
-        this.idDespesa = idDespesa;
+        this.id = idDespesa;
     }
 
     public String getNome() {
