@@ -8,8 +8,8 @@ public class DeletarUsuario {
         try {
             DataHandler manipulador = new DataHandler();
             manipulador.setTabela("tb_usuarios");
-            manipulador.setCamposTabela("nome");
-            manipulador.setValores("'teste'");
+            manipulador.setCamposTabela("id");
+            manipulador.setValores("'19'");
             manipulador.deletar();
             System.out.println("deu bom");
 
@@ -21,4 +21,5 @@ public class DeletarUsuario {
     public static void main(String[] args) {
         DeletarUsuario d = new DeletarUsuario();
     }
+
 }
