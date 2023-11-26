@@ -2,6 +2,7 @@ package Dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class DataHandler {
 
@@ -79,23 +80,27 @@ public class DataHandler {
         }
     }
 
-    public void executaBuscaTodosUsuarios() {
+    public void buscaDadosUsuarios() {
 
-        String sql = "SELECT * FROM " + this.tabela;
+        String sql = "SELECT * FROM tb_usuarios";
         ResultSet rs = con.executaBuscaSQL(sql);
 
         try {
             while (rs.next()) {
-                int id = rs.getInt("idUsuario");
+                int id = rs.getInt("id");
                 String nome = rs.getString("nome");
                 String email = rs.getString("email");
                 String senha = rs.getString("senha");
-                System.out.println(id + " - " + nome );
+                System.out.println(id + " - " + nome+ " - " + email+ " - " + senha );
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+    }
+    public void buscaTodosDadosPorId(){
+        String sql = "SELECT " + this.camposTabela + " FROM " + this.tabela + " WHERE id = " + this.valorId;
+        ResultSet rs = con.executaBuscaSQL(sql);
     }
 
 }
