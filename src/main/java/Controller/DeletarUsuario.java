@@ -18,8 +18,6 @@ public class DeletarUsuario {
         }
     }
 
-    public static void main(String[] args) {
-        DeletarUsuario d = new DeletarUsuario();
-    }
+
 
 }

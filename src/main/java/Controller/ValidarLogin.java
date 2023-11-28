@@ -1,12 +1,12 @@
 package Controller;
 
 import Dao.DataHandler;
+import Views.Main;
 
 public class ValidarLogin {
-    ValidarLogin(){}
-
     public static void main(String[] args) {
-        DataHandler manipula = new DataHandler();
-        manipula.buscaDadosUsuarios();
+
     }
+
+
 }

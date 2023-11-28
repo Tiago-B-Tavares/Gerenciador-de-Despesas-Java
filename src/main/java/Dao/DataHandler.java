@@ -2,7 +2,6 @@ package Dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class DataHandler {
 
@@ -98,9 +97,34 @@ public class DataHandler {
         }
 
     }
-    public void buscaTodosDadosPorId(){
-        String sql = "SELECT " + this.camposTabela + " FROM " + this.tabela + " WHERE id = " + this.valorId;
+    public boolean validaLogin(String email, String senha) {
+
+        String sql = "SELECT email, senha FROM tb_usuarios";
         ResultSet rs = con.executaBuscaSQL(sql);
+
+        String emailUsuario = null;
+        String senhaUsuario = null;
+        Boolean liberaAcesso = null;
+
+        try {
+            while (rs.next()) {
+
+                //int idUsuario = rs.getInt("id");
+                emailUsuario = rs.getString("email");
+                senhaUsuario = rs.getString("senha");
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (email.equals(emailUsuario) && senha.equals(senhaUsuario)){
+            liberaAcesso = true;
+            System.out.println("Acesso Liberado");
+        }else {
+            liberaAcesso = false;
+            System.out.println("Acesso não Liberado");
+        }
+        return liberaAcesso;
     }
 
 }

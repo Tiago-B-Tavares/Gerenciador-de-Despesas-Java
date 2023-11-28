@@ -151,7 +151,7 @@ public class FormCadastroUsuario extends javax.swing.JFrame {
 
                 user.setNome(txtNome.getText());
                 user.setEmail(txtEmail.getText());
-                user.setSenha(Arrays.toString(txtSenha.getPassword()));
+                user.setSenha(new String(txtSenha.getPassword()));
                 CadastrarUsuario cadastro = new CadastrarUsuario(user.getNome(), user.getEmail(), user.getSenha());
                 dispose();
         }
