@@ -1,4 +1,4 @@
-package Controller;
+package Controller.receita;
 
 import Dao.DataHandler;
 
@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.util.Date;
 
 public class CadastarReceita {
-    CadastarReceita(String nome, Double valor){
+    CadastarReceita(String nome, Double valor) {
 
         try {
 
@@ -22,14 +22,11 @@ public class CadastarReceita {
             } else {
                 JOptionPane.showMessageDialog(null, "Erro ao cadastrar receita!!");
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getMessage() + "\n Erro ao cadastrar receita no banco de dados!");
         }
 
     }
 
-    public static void main(String[] args) {
-        CadastarReceita c = new CadastarReceita("salário", 1.500);
-    }
 }

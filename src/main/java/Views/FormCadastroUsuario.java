@@ -4,11 +4,10 @@
  */
 package Views;
 
-import Controller.CadastrarUsuario;
+import Controller.usuario.CadastrarUsuario;
 import Model.Usuario;
 
 import javax.swing.*;
-import java.util.Arrays;
 
 /**
  * @author Professores

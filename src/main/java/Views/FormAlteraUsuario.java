@@ -4,6 +4,7 @@
  */
 package Views;
 
+import Dao.DataHandler;
 import Model.Usuario;
 
 /**
@@ -136,8 +137,8 @@ public class FormAlteraUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_txtSenhaActionPerformed
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-     Usuario user = new Usuario();
-     txtNome.setText(user.getNome());
+        Usuario user = new Usuario();
+        txtNome.setText(user.getNome());
     }//GEN-LAST:event_txtNomeActionPerformed
 
     /**
@@ -187,4 +188,16 @@ public class FormAlteraUsuario extends javax.swing.JFrame {
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtSenha;
     // End of variables declaration//GEN-END:variables
+    DataHandler manipula = new DataHandler();
+
+    
+      
+    
+
+    
+    
+
+
+
+
 }

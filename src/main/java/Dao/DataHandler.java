@@ -10,7 +10,7 @@ public class DataHandler {
     private String tabela;
     private String camposTabela;
     private String valores;
-    private String valorId;
+    private int valorId;
     private boolean status;
 
     {
@@ -33,7 +33,7 @@ public class DataHandler {
         this.valores = valores;
     }
 
-    public void setValorId(String valorId) {
+    public void setValorId(int valorId) {
         this.valorId = valorId;
     }
 
@@ -68,7 +68,7 @@ public class DataHandler {
     }
 
     public void deletar() {
-        String sql = "DELETE FROM " + this.tabela + " WHERE " + this.camposTabela + " = " + this.valores;
+        String sql = "DELETE FROM " + this.tabela + " WHERE " + this.camposTabela + " = " + this.valorId;
         int res = con.executaSQL(sql);
         if (res > 0) {
             this.status = true;
@@ -90,7 +90,7 @@ public class DataHandler {
                 String nome = rs.getString("nome");
                 String email = rs.getString("email");
                 String senha = rs.getString("senha");
-                System.out.println(id + " - " + nome+ " - " + email+ " - " + senha );
+                
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -109,7 +109,7 @@ public class DataHandler {
         try {
             while (rs.next()) {
 
-                //int idUsuario = rs.getInt("id");
+
                 emailUsuario = rs.getString("email");
                 senhaUsuario = rs.getString("senha");
 

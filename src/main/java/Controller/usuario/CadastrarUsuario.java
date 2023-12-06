@@ -1,7 +1,6 @@
-package Controller;
+package Controller.usuario;
 
 import Dao.DataHandler;
-import Model.Usuario;
 
 import javax.swing.*;
 

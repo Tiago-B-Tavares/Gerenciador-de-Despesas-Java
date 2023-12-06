@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7357cb4a-fa11-4ac6-9c15-694f9a8296c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/despesa/CadastarDespesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/despesa/CadastarDespesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/despesa/DeletarDespesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/despesa/DeletarDespesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/receita/CadastarReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/receita/CadastarReceita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/usuario/AlterarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/usuario/AlterarUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/usuario/CadastrarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/usuario/CadastrarUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/usuario/DeletarUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/usuario/DeletarUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/FormCadastroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/FormCadastroUsuario.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2YHDDKf7gQRb70VUKLOJQBAchEn" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Professores/Documents/NetBeansProjects/ChatRMI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.DeletarDespesa">
+    <configuration name="DeletarDespesa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.despesa.DeletarDespesa" />
+      <module name="gerenciadordedespesas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.despesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeletarUsuario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.usuario.DeletarUsuario" />
+      <module name="gerenciadordedespesas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.despesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Views.FormLogin" />
+      <module name="gerenciadordedespesas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidarLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.ValidarLogin" />
+      <module name="gerenciadordedespesas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.despesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.main" />
+      <module name="gerenciadordedespesas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.despesa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Gerenciador-de-Despesas-Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Gerenciador-de-Despesas-Java" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DeletarDespesa" />
+        <item itemvalue="Application.FormLogin" />
+        <item itemvalue="Application.ValidarLogin" />
+        <item itemvalue="Application.DeletarUsuario" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7357cb4a-fa11-4ac6-9c15-694f9a8296c4" name="Changes" comment="" />
+      <created>1700173492586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700173492586</updated>
+      <workItem from="1700173493928" duration="6136000" />
+      <workItem from="1700253582905" duration="1792000" />
+      <workItem from="1700255498543" duration="1739000" />
+      <workItem from="1700265985133" duration="3259000" />
+      <workItem from="1700308477160" duration="9427000" />
+      <workItem from="1700522353473" duration="2871000" />
+      <workItem from="1700604459041" duration="3838000" />
+      <workItem from="1700784415095" duration="2463000" />
+      <workItem from="1700870410703" duration="1832000" />
+      <workItem from="1700939004269" duration="562000" />
+      <workItem from="1700942853518" duration="3347000" />
+      <workItem from="1701116632286" duration="9503000" />
+      <workItem from="1701213443666" duration="2719000" />
+      <workItem from="1701301641802" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.postgresql.util.PSQLException" package="org.postgresql.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
