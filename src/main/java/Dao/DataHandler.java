@@ -2,6 +2,7 @@ package Dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 public class DataHandler {
 
@@ -122,7 +123,7 @@ public class DataHandler {
             System.out.println("Acesso Liberado");
         }else {
             liberaAcesso = false;
-            System.out.println("Acesso não Liberado");
+             JOptionPane.showMessageDialog(null, "Acesso não Liberado");
         }
         return liberaAcesso;
     }
